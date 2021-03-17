@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="text" id="textInput"></input>
+    <input type="text" id="textInput2"></input>
+    <button id="adder" onclick="inputSum()">Sum (First input only)</button>
+    <button id="adder" onclick="addInput()">+</button>
+    <button id="adder" onclick="subtractInput()">-</button>
+    <button id="adder" onclick="multiplyInput()">*</button>
+    <div id="display"></div>
+    <script>
+
+            function inputSum() {
+                let num = new Number(document.getElementById("textInput").value);
+                for (let i = num; i > 1; i--) {
+                    num += (i-1);
+                }
+
+                //Followed example from instructor's solution to check whether the input was a number, it still allows non-numbers through.
+                const checkInt = parseFloat(num);
+                if (checkInt !== NaN) {
+                    document.getElementById("display").innerHTML += num + '</br>';
+                }
+            }
+
+            function addInput() {
+                let num1 = new Number(document.getElementById("textInput").value);
+                let num2 = new Number(document.getElementById("textInput2").value);
+                let sum = (num1 + num2);
+
+                const checkInt1 = parseFloat(num1);
+                const checkInt2 = parseFloat(num2);
+                if ((checkInt1 !== NaN) & (checkInt2 !== NaN)) {
+                    document.getElementById("display").innerHTML += num1 + " + " + num2 + " = " + sum + '</br>';
+                }
+            }
+
+            const subtractInput = function minus() {
+                let num1 = new Number(document.getElementById("textInput").value);
+                let num2 = new Number(document.getElementById("textInput2").value);
+                let sum = (num1 - num2);
+                
+                const checkInt1 = parseFloat(num1);
+                const checkInt2 = parseFloat(num2);
+                if ((checkInt1 !== NaN) & (checkInt2 !== NaN)) {
+                    document.getElementById("display").innerHTML += num1 + " - " + num2 + " = " + sum + '</br>';
+                }
+            }
+
+            const multiplyInput = () => {
+                let num1 = new Number(document.getElementById("textInput").value);
+                let num2 = new Number(document.getElementById("textInput2").value);
+                let sum = (num1 * num2);
+                
+                const checkInt1 = parseFloat(num1);
+                const checkInt2 = parseFloat(num2);
+                if ((checkInt1 !== NaN) & (checkInt2 !== NaN)) {
+                    document.getElementById("display").innerHTML += num1 + " * " + num2 + " = " + sum + '</br>';
+                }
+            }
+
+    </script>
+</body>
+</html>

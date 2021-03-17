@@ -1,0 +1,9 @@
+#w08Canvas {
+    border: solid 2px black;
+}
+
+#w08Canvas:hover {
+    border: dashed 5px blue;
+    transform: rotate(-30deg) translateY(20px) skew(20deg, 10deg);
+    transition: transform 0.2s ease-out 50ms;
+}

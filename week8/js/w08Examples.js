@@ -1,0 +1,12 @@
+var canvas = document.getElementById("w08Canvas");
+var context = canvas.getContext("2d");
+context.strokeStyle = "red";
+var grad = context.createLinearGradient(10, 10, 10, 190);
+grad.addColorStop(0, "blue");
+grad.addColorStop(0.5, "green");
+context.fillStyle = grad;
+context.beginPath();
+context.arc(50, 50, 30, 0, Math.PI*2, true);
+context.closePath();
+context.fill();   
+context.stroke();
