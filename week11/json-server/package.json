@@ -7,7 +7,7 @@
     "start": "json-server --watch ./database.json",
     "start-auth": "node server.js"
   },
-  "author": "",
+  "author": "DerekAndDanny",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.15.0",
