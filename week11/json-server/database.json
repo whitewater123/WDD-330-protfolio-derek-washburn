@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "email": "user1@email.com",
+      "password": "user1",
+      "firstname": "Test",
+      "lastname": "User",
+      "age": 20,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "email": "user2@email.com",
+      "password": "user2"
+    },
+    {
+      "email": "user3@email.com",
+      "password": "$2a$10$gFzBsVMWTJAB3H81DDDS3.iGM4lVCBh9SMlfAipzyHnd/X17mk9y6",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "title": "First Post!",
+      "content": "I can't believe I got first post.",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "First Post!",
+      "content": "Woot! I never get first post!",
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "title": "First Post!",
+      "content": "Did I really get first?",
+      "userId": "3",
+      "createdAt": 1558736105449,
+      "id": 8
+    },
+    {
+      "title": "post 5",
+      "content": "post 5",
+      "userId": "user1@email.com",
+      "createdAt": 1559159434900,
+      "id": 11
+    },
+    {
+      "title": "post 6",
+      "content": "post 6",
+      "userId": "user1@email.com",
+      "createdAt": 1559159640285,
+      "id": 12
+    },
+    {
+      "title": "Hello World the Movie",
+      "content": "It's my first film",
+      "userId": "user1@email.com",
+      "createdAt": 1616107547296,
+      "id": 13
+    },
+    {
+      "title": "New Post",
+      "content": "yes",
+      "userId": "user1@email.com",
+      "createdAt": 1616107890914,
+      "id": 14
+    },
+    {
+      "title": "yay",
+      "content": "yay",
+      "userId": "user1@email.com",
+      "createdAt": 1616109541963,
+      "id": 15
+    },
+    {
+      "title": "TestRun",
+      "content": "Run",
+      "userId": "user1@email.com",
+      "createdAt": 1616109957314,
+      "id": 16
+    },
+    {
+      "title": "Testing One",
+      "content": "yes",
+      "userId": "user1@email.com",
+      "createdAt": 1616110049548,
+      "id": 17
+    },
+    {
+      "title": "Hello World the Movie 2",
+      "content": "Sequel!",
+      "userId": "user1@email.com",
+      "createdAt": 1616110582191,
+      "id": 18
+    },
+    {
+      "title": "Test",
+      "content": "yes",
+      "userId": "user1@email.com",
+      "createdAt": 1616110673292,
+      "id": 19
+    },
+    {
+      "title": "Testing",
+      "content": "5",
+      "userId": "user1@email.com",
+      "createdAt": 1616110727649,
+      "id": 20
+    },
+    {
+      "title": "TestRun",
+      "content": "1",
+      "userId": "user1@email.com",
+      "createdAt": 1616110750585,
+      "id": 21
+    },
+    {
+      "title": "Test",
+      "content": "test",
+      "userId": "user1@email.com",
+      "createdAt": 1616180977406,
+      "id": 22
+    },
+    {
+      "title": "Testing",
+      "content": "1",
+      "userId": "user1@email.com",
+      "createdAt": 1616187114016,
+      "id": 23
+    }
+  ]
+}
