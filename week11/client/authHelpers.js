@@ -23,7 +23,7 @@ export class Errors {
     this.errorElement.classList.add('hidden');
   }
 }
-const baseURL = 'http://127.0.0.1:3000/';
+const baseURL = 'http://127.0.0.1:5500/';
 
 export async function makeRequest(
   url,
@@ -45,6 +45,8 @@ export async function makeRequest(
   if (token) {
     options.headers.Authorization = `Bearer ${token}`;
   }
+  console.log("URL: " + baseURL + url);
+  console.log("Options: " + options);
   const response = await fetch(baseURL + url, options);
   
   const data = await response.json();
